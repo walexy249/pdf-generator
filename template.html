@@ -1,92 +1,237 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student's profile</title>
+	<title>Mutual Benefits Assurance Company</title>
 	<head>
 	<style type="text/css">
 		body{
-			width: 1200px;
-			margin: 0;
-			padding: 0px;
+			width: 1000px;
+			margin: 0 auto;
+			padding: 1rem 1rem;
 			font-size: 16px;
-			line-height: 24px;
+			/* line-height: 24px; */
 			font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
 			color: rgb(33,33,33);
+			
 		}
-		.report-header{
-			background: rgb(55,39,114);
-			color: rgb(255,255,255);
-			padding: 15px;
-			padding-left: 200px;
-			box-sizing: border-box;
-			display: block;
-			position: relative;
-		}
-		.report-header .logo{
+		.bg-image {
+			background: url("https://mutual-lr.com/assets/img/site-logo.jpg");
+			/* filter: blur(8px); */
+  			/* -webkit-filter: blur(8px); */
+  
+			/* Full height */
+			height: 30rem; 
+			width: 30rem;
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 			position: absolute;
-			top: 40px;
-			left: 15px;
-			width: 150px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0.1;
+			z-index: -1;
 		}
-		.report-footer{
-			background: rgb(55,39,114);
-			color: rgb(255,255,255);
-			padding: 15px;
-			box-sizing: border-box;
-			display: block;
+		.header {
+			display: flex;
+			
+		}
+		h1 {
+			color: rgb(2,138,66);
+			margin: 0;
+			margin-top: .5rem;
+			font-size: 2rem;
+		}
+		strong {
+			color: rgb(2,138,66);
+
+		}
+		img {
+			width: 9rem;
+			height: 9rem;
+			padding-left: 1rem;
+		}
+		.header-text {
+			padding-left: 1rem;
+		}
+		.header-text p {
+			font-size: 1rem;
+			line-height: .4rem;
+		}
+		.debit {
+			padding-left: 1.5rem;
+
+		}
+		.debit p {
+			padding: .05rem 1rem;
+			border: 2px solid black;
+			font-size: 1rem;
+			font-weight: 600;
+			box-shadow: 5px 4px;
+		}
+		.debit-id {
+			font-size: 1rem;
+			font-weight: 700;
+			font-style: bold;
+			padding-left: 1.5rem;
+			display: flex;
+		}
+		.debit-id p {
+			align-self: center;
+			margin: 0;
+			padding: 0;
+		}
+		.date {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: flex-end;
+			font-size: 1rem;
+		}
+		hr {
 			position: relative;
+            top: -17px;
+            border: none;
+            height: 2px;
+            background: black;
+			margin: 0;
+			padding: 0;
 		}
-		.report-body{
-			width: 70%;
-			display: inline-block;
-			position: relative;
-			padding: 15px;
-			box-sizing: border-box;
-			vertical-align: top;
+		.box {
+			background-color: rgb(186, 179, 179);
+			padding-right: 1rem;
+			padding-bottom: 1rem;
+			padding-top: 0;
+			padding-left: 1rem;
+			font-weight: 600;
+			border: 1px solid black;
 		}
-		.report-photo{
-			width: 28%;
-			display: inline-block;
-			position: relative;
-			vertical-align: top;
-			box-sizing: border-box;
-			margin-top: 15px;
+		.type {
+			margin-top: -1.1rem;
+			padding-left: 1rem;
 		}
-		.report-photo img{
-			width: 100%;
+		.agency {
+			padding-left: 5rem;
 		}
-		.report-body .info p{
-			border: rgb(204,204,204) solid 1px;
-			padding: 5px;
-			display: block;
-			position: relative;
+		.agency strong {
+			font-weight: 700;
+			font-size: 1rem;
+		}
+		.insured {
+			padding-left: 1rem;
+		}
+		.policy {
+			display: flex;
+			width: 80%;
+			justify-content: space-between;
+		}
+		table {
+			width: 80%;
+			margin: 0 auto;
+		}
+		th {
+			color: rgb(2,138,66);
+		}
+		table, th, td {
+			/* border-spacing: 5rem; */
+  			border: 1px solid black;
+			  border-collapse: collapse;
+		}
+		th, td	{
+			padding: 1rem;
+		}
+		.end {
+			font-size: .9rem;
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 8rem;
+			width: 80%;
+			margin: 8rem auto;
+			font-style: bold;
+			font-weight: 500;
 		}
 	</style>
 	<meta charset="utf-8">
 </head>
 <body>
-	<div class="report-header">
-		<img src="https://www.activfirst.co.uk/wp-content/uploads/logo-example.jpg" class="logo">
-		<h3>{{title}}</h3>
-		<p>{{date}}</p>
-	</div>
-	<div class="report-body">
-		<div class="info">
-			<p>Student: {{name}}</p>
-			<p>OEN: {{oen}}</p>
-			<p>Age: {{age}}</p>
-			<p>Birthdate: {{birthdate}}</p>
-			<p>Course: {{course}}</p>
+	<div class="bg-image"></div>
+	<div style="z-index: 5;">
+		<div class="header">
+			<div class="logo"><img src="https://mutual-lr.com/assets/img/site-logo.jpg" alt=""></div>
+			<div class="header-text">
+				<h1>Mutual Benefits Assurance Company.</h1>
+				<p>17th/18th Streets, Sinkor, Tubman Boulevard, Monrovia, Republic of Liberia</p>
+				<p>Tel: 231 (0) 886 769420, (0) 777 812257 Fax: </p>
+				<p>Email: info@mutual-lr.com</p>
+				<p>Website: http://www.mutual-lr.com</p>
+			</div>
 		</div>
-		<div class="obs">
-			<p>Obs: {{obs}}</p>
+		<div class="header">
+			<div class="debit">
+				<p>Debit Note</p>
+			</div>
+			<div class="debit-id">
+				<p>DN2021000093HQ</p>
+			</div>
+		</div>
+		<div class="date">
+			<p> <strong>Date</strong>: Thursday, 28th Jan, 2021</p>
+		</div>
+		<hr>
+		
+		<div class="header type">
+			<div class="box">
+				<p>2004 TOYOTA 4RUNNER SUVrnVIN&num;:</p>
+				<p>JTEBU14RX40030233rnPLATE&num;: UMC-28 </p>
+			</div>
+			<div class="agency">
+				<p> <strong>Agency:</strong> LEON GUEHDUO</p>
+				<p> <strong>Account Code:</strong>  41/01117</p>
+				<p> <strong>Transaction: RENEWAL</strong>  </p>
+			</div>
+		</div>
+	
+		<div class="insured">
+			<p><Strong>INSURED: &nbsp; &nbsp; &nbsp; DEPARTMENT EVANGELISM & MISSION,LAC-UMU</Strong></p>
+			<div class="policy">
+	
+				<p><Strong>POLICY NO:</Strong> &nbsp; &nbsp; &nbsp; MBA/PC/4/11027/A/021 </p>
+				<p><Strong>Sub-Class:</Strong> &nbsp; &nbsp; &nbsp; PRIVATE CARS</p>
+			</div>
+			<div class="policy">
+				<p> <strong>COVERED PERIOD:</strong> &nbsp; &nbsp; &nbsp; 28-Jan-2021</p>
+				<p> <strong>To:</strong> &nbsp; &nbsp; &nbsp; 27-Jan-2022</p>
+				<p> <strong>Sum Insured:</strong> &nbsp; &nbsp; &nbsp; USD 5,000.00</p>
+			</div>
+		</div>
+	
+		<table>
+			<tr>
+			  <th>Details</th>
+			  <th>Amount</th>
+			</tr>
+			<tr>
+			  <td>BEING RENEWAL PREMIUM DUE ON THE POLICY MBA/PC/4/11027/A/021 <br> Brown card: 10.00 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sticker: 15.00</td>
+			  <td>USD 225.00</td>
+			</tr>
+		</table>
+		<div style="width: 80%; margin: 0 auto;">
+	
+			<p><strong style="font-style: italic;">Two Hundred Dollar Only</strong></p>
+		</div>
+		<div style=" display: flex; width: 80%; margin: 0 auto;">
+				<p style="padding-right: 15rem;"><strong>PREPARED BY:</strong></p>
+				<p><strong>EXAMINED BY:</strong></p>
+			
+		</div>
+		<div style="width: 80%; margin: 0 auto;">
+			<p style="padding-left: 5rem; font-style: italic; font-size: .9rem;">Settlement Should Follow Immediately Unless Otherwise Stated</p>
+		</div>
+		<div class="end">
+			<p>Run Date: &nbsp; &nbsp; &nbsp;  Thursday, 28th Jan, 2021</p>
 		</div>
 	</div>
-	<div class="report-photo">
-		<img src="https://avatars1.githubusercontent.com/u/16254838?s=460&v=4">
-	</div>
-	<div class="report-footer">
-		A generic Company - All Rights reserved.
-	</div>
+	
 </body>
 </html>
